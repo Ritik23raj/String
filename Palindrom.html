@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+</head>
+
+<body>
+    <h1>Palindrom check</h1>
+</body>
+<script>
+    
+    let value = prompt("Enter your value")
+    
+    let myRevvalue = ()=> {
+        let myRevValue = value.toString().split("").reverse().join("")
+        const  myvalue = value.toString()
+        if( myvalue == myRevValue){
+            console.log("this is  a palindrom")
+        }else{
+            console.log("this is not a palindrom")
+        }
+    }
+
+    myRevvalue();
+</script>
+
+</html>
